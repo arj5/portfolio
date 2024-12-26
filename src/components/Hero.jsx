@@ -9,7 +9,7 @@ const Hero = () => {
           <h2 className=" text-4xl px-2 font-bold md:text-5xl lg:text-[7rem]">
             {HERO.first}
           </h2>
-          <h2 className=" text-4xl px-2 font-bold md:text-5xl lg:text-[7rem]">
+          <h2 className=" text-4xl px-2 font-thin md:text-5xl lg:text-[7rem]">
             {HERO.last}
           </h2>
           <p className="p-2 text-3xl tracking-tighter md:text-4xl">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import signW from "../assets/signW.png";
 import { NAVIGATION_LINKS } from "../info";
+import { FaTimes, FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMobileOpen, setMobileOpen] = useState(false);
@@ -10,12 +11,12 @@ const Navbar = () => {
   };
   const handleClick = (e, href) => {
     e.preventDefault();
-    const targetElement = document.querySelector(href);
-    if (targetElement) {
-      const offest = -85;
-      const elemPos = targetElement.getBoundClientRect().top;
+    const targetElem = document.querySelector(href);
+    if (targetElem) {
+      const offset = -85;
+      const elemPos = targetElem.getBoundClientRect().top;
       const offsetPos = elemPos + window.scrollY + offset;
-      window.toScroll({
+      window.scrollTo({
         top: offsetPos,
         behavior: "smooth",
       });
@@ -54,12 +55,42 @@ const Navbar = () => {
 
         {/* Mobile */}
 
-        <div className="rounded-lg backdrop-blur-md lg:hidden">
+        <div className="w-full fixed top-0 rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
-            <a href="#">
-              <img src={signW} width={120} alt="signW" className="m-2" />
-            </a>
+            <div>
+              <a href="#">
+                <img src={signW} width={120} alt="signW" className="mx-3" />
+              </a>
+            </div>
+            <div className="flex flex-col items-center ">
+              <button
+                className="focus:outline-none lg:hidden "
+                onClick={toggleMobile}
+              >
+                {isMobileOpen ? (
+                  <FaTimes className="m-3 h-10 w-12" />
+                ) : (
+                  <FaBars className="m-3 h-10 w-12" />
+                )}
+              </button>
+            </div>
           </div>
+
+          {isMobileOpen && (
+            <ul className="ml-4 my-4 flex flex-col gap-4 backdrop-blur-md">
+              {NAVIGATION_LINKS.map((item, index) => (
+                <li key={index}>
+                  <a
+                    href={item.href}
+                    className=" block w-full text-3xl"
+                    onClick={(e) => handleClick(e, item.href)}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </nav>
     </>
