@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import signW from "../assets/signW.png";
-import { NAVIGATION_LINKS } from "../info";
+import { LINKS } from "../info";
 import { FaTimes, FaBars } from "react-icons/fa";
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
     const targetElem = document.querySelector(href);
     if (targetElem) {
       const offset = -85;
-      const elemPos = targetElem.getBoundClientRect().top;
+      const elemPos = targetElem.getBoundingClientRect().top;
       const offsetPos = elemPos + window.scrollY + offset;
       window.scrollTo({
         top: offsetPos,
@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className=" flex items-center justify-between gap-6">
             <div>
               <ul className="flex items-center gap-4">
-                {NAVIGATION_LINKS.map((item, index) => (
+                {LINKS.map((item, index) => (
                   <li className="text-lg hover:text-yellow-400" key={index}>
                     <a
                       href={item.href}
@@ -78,7 +78,7 @@ const Navbar = () => {
 
           {isMobileOpen && (
             <ul className="ml-4 my-4 flex flex-col gap-4 backdrop-blur-md">
-              {NAVIGATION_LINKS.map((item, index) => (
+              {LINKS.map((item, index) => (
                 <li key={index}>
                   <a
                     href={item.href}
