@@ -20,6 +20,28 @@ body{
   background-image: url("../src/assets/bg.jpg");
 }
 
+.imgBorder {
+  --c: white; 
+  --b: 8px; 
+  --o: 25px; 
+  
+  width: 500px; 
+  --_p: calc(2*var(--o) + var(--b));
+  padding: var(--_p) var(--_p) 0 0;
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--o) - var(--_p));
+  transition: .4s;
+  cursor: pointer;
+}
+
+.imgBorder + .imgBorder {
+  padding: var(--_p) 0 0 var(--_p);
+}
+.imgBorder:hover {
+  padding: calc(var(--_p)/2);
+}
+
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
