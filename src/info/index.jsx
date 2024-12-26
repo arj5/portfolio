@@ -20,7 +20,8 @@ export const HERO = {
   last: "SHARMA",
   greet: "Hello there!",
   location: "Toronto",
-  school: "Computer Science @ Toronto Metropolitan University (Ryerson)",
+  school: "3rd Year @ Toronto Metropolitan University",
+  degree: "Computer Science Co-op Program (BSc)",
 };
 
 // Toronto Metropolitan University (formerly Ryerson), Toronto, ON Sep 2022 - April 2027 (Exp) Bachelor of Science (BSc): Computer Science Co-op Program.

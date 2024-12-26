@@ -28,9 +28,9 @@ const Navbar = () => {
       <nav className="fixed flex flex-row items-center justify-center left-0 right-0 top-4 z-50">
         {/* Desktop */}
 
-        <div className="lg:flex hidden max-w-sm  fixed left-10 top-4">
+        <div className="lg:flex hidden max-w-sm w-40 h-40 fixed left-10 top-4 rounded-full bg-black/20 py-3 backdrop-blur-lg border-[11.5px] border-white transition-shadow duration-300 hover:shadow-[0_0_20px_5px_rgba(255,255,255,0.8)]">
           <a href="#">
-            <img src={signW} width={150} alt="sign" />
+            <img src={signW}  alt="sign" />
           </a>
         </div>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
 
         {/* Mobile */}
 
-        <div className="w-full fixed top-0 rounded-lg backdrop-blur-md lg:hidden">
+        <div className="w-full border-b-4 border-white fixed top-0  backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
             <div>
               <a href="#">
