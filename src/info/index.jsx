@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-import p1 from "../assets/portfolio.png";
+import p1 from "../assets/p.png";
 import p2 from "../assets/tasks.png";
 import p3 from "../assets/q.png";
 import p4 from "../assets/w.png";

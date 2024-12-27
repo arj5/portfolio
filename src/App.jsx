@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ParticlesCanvas from "./components/Particles.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Projects />
           <Contact />
           <Footer />
+          <ParticlesCanvas />
         </div>
       </div>
     </>
