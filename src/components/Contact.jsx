@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { FiSend } from "react-icons/fi";
 import toast, { Toaster } from "react-hot-toast";
 import { MdEmail } from "react-icons/md";
+import { FaCopy, FaRegCopy } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -63,6 +64,15 @@ const Contact = () => {
     }
   };
 
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("arjunsharma0510@gmail.com").then(() => {
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
+    });
+  };
+
   return (
     <>
       <Toaster
@@ -88,7 +98,7 @@ const Contact = () => {
       />
       <div className="  pt-20 lg:w-3/4  " id="contact">
         <h2 className=" text-center text-3xl lg:text-4xl">Connect With Me</h2>
-        <div className="flex justify-center gap-2 items-center my-10">
+        <div className="flex justify-center gap-2 items-center my-10 bg-stone-900/50 rounded-xl px-4 py-2 w-max mx-auto">
           <a
             href="mailto:arjunsharma0510@gmail.com"
             target="_blank"
@@ -99,7 +109,13 @@ const Contact = () => {
               className="transition-transform duration-300 hover:scale-150"
             />
           </a>
-          arjunsharma0510@gmail.com
+          <button
+            onClick={handleCopy}
+            className="transition-transform duration-300 hover:scale-150"
+          >
+            {isCopied ? <FaRegCopy fontSize={20} /> : <FaCopy fontSize={20} />}
+          </button>
+          <span>arjunsharma0510@gmail.com</span>
         </div>
         <form onSubmit={handleSubmit}>
           <div className=" mb-4  ">
