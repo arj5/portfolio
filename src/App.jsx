@@ -2,6 +2,7 @@ import Hero from "../src/components/Hero.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Navbar />
           <Projects />
           <Contact />
+          <Footer />
         </div>
       </div>
     </>

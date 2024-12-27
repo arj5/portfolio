@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 import p1 from "../assets/arjunCircle.jpeg";
 
@@ -74,13 +75,17 @@ export const SKILLS = [
   // },
 ];
 
-export const SOCIAL_MEDIA_LINKS = [
+export const SOCIAL = [
   {
-    href: "https://github.com/",
+    href: "https://github.com/arj5",
     icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://www.linkedin.com/",
+    href: "http://www.linkedin.com/in/arjunsharma0510",
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
+  },
+  {
+    href: "mailto:arjunsharma0510@gmail.com",
+    icon: <MdEmail fontSize={25} className="hover:opacity-80" />,
   },
 ];

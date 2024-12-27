@@ -1,7 +1,8 @@
-import { HERO } from "../info";
+import { HERO, SOCIAL } from "../info";
 import arj from "../assets/arjunCircle.jpeg";
 import { FaLocationDot, FaSchoolFlag } from "react-icons/fa6";
 import { MdSchool } from "react-icons/md";
+import React from "react";
 
 const Hero = () => {
   return (
@@ -29,6 +30,18 @@ const Hero = () => {
             <FaSchoolFlag />
             {HERO.school}
           </p>
+          <div className="flex gap-3 mt-4 ml-2">
+            {SOCIAL.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
         </div>
         <div className="max-w-full md:w-1/2 lg:p-8 ">
           <div className="flex justify-center">

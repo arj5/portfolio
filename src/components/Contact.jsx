@@ -95,7 +95,7 @@ const Contact = () => {
             href="mailto:arjunsharma0510@gmail.com"
           >
             {" "}
-            Contact
+            arjunsharma0510@gmail.com
           </a>
         </div>
         <form onSubmit={handleSubmit}>
