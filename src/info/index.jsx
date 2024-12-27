@@ -49,6 +49,7 @@ export const PROJECTS = [
       "ThreeJS",
       "EmailJS",
       "ReactHotToast",
+      "Vercel",
     ],
     view: "https://github.com/arj5/portfolio",
   },
@@ -76,7 +77,7 @@ export const PROJECTS = [
     description:
       "Dynamic and responsive weather application offering real-time weather updates, geolocation-based data, unit conversion, a robust location search functionality and more.",
     image: p4,
-    tech: ["JavaScript", "React", "Tailwind CSS", "OpenWeather API"],
+    tech: ["JavaScript", "React", "Tailwind CSS", "OpenWeather API", "Netlify"],
     view: "https://github.com/arj5/weather-application",
   },
   {
@@ -108,7 +109,7 @@ export const PROJECTS = [
     name: "Tic Tac Toe",
     description: "Simple UI/UX game of Tic-Tac-Toe",
     image: p7,
-    tech: ["JavaScript", "HTML", "CSS"],
+    tech: ["JavaScript", "HTML", "CSS", "Vercel"],
     view: "https://github.com/arj5/tic-tac-toe",
   },
 ];
