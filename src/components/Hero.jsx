@@ -3,8 +3,31 @@ import arj from "../assets/arjunCircle.jpeg";
 import { FaLocationDot, FaSchoolFlag } from "react-icons/fa6";
 import { MdSchool } from "react-icons/md";
 import signW from "../assets/signW.png";
+import Typed from "typed.js";
+import { useEffect } from "react";
 
 const Hero = () => {
+  useEffect(() => {
+    // Initialize Typed.js after the component is mounted
+    const typed = new Typed(".auto-type", {
+      strings: [
+        "Software Developer",
+        "UI/UX Developer",
+        "Full-Stack Developer",
+        "Software Engineer",
+        "Spider-Man",
+      ],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+    });
+
+    // Cleanup the Typed.js instance when the component is unmounted
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <section
@@ -19,7 +42,7 @@ const Hero = () => {
             {HERO.last}
           </h2>
           <p className="pl-2 py-7 text-3xl tracking-tighter md:text-4xl">
-            {HERO.greet}
+            <span className="auto-type"></span>
           </p>
           <div className="flex flex-row items-center gap-2 pl-2 text-xl md:text-xl">
             <FaLocationDot />
@@ -55,7 +78,6 @@ const Hero = () => {
               alt="arjun"
             />
             <div className="md:absolute md:w-full md:z-50 md:top-[320px] md:left-[280px]">
-             
               <img src={signW} width={160} alt="signW" className="mx-3" />
             </div>
           </div>
