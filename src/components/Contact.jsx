@@ -85,10 +85,19 @@ const Contact = () => {
           },
         }}
       />
-      <div className=" p-4 lg:w-3/4" id="contact">
-        <h2 className=" my-8 text-center text-4xl font-semibold tracking-tighter">
+      <div className=" p-4 lg:w-3/4  " id="contact">
+        <h2 className=" my-2 text-center text-4xl font-semibold tracking-tighter">
           Connect With Me
         </h2>
+        <div className="flex justify-center">
+          <a
+            className="mb-8 rounded border-2 border-stone-50/30 bg-white text-stone-900 hover:bg-stone-300 px-4 py-2 text-sm font-semibold "
+            href="mailto:arjunsharma0510@gmail.com"
+          >
+            {" "}
+            Contact
+          </a>
+        </div>
         <form onSubmit={handleSubmit}>
           <div className=" mb-4  ">
             <div className="flex gap-4">
@@ -146,7 +155,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className={`mb-8 w-full rounded border-2 border-stone-50/30 bg-stone-200 text-stone-900 hover:bg-stone-300 px-4 py-2 text-sm font-semibold ${
+            className={`mb-8 w-full rounded border-2 border-stone-50/30 bg-white text-stone-900 hover:bg-stone-300 px-4 py-2 text-sm font-semibold ${
               isSending ? "cursor-not-allowed opacity-50" : ""
             }`}
             disabled={isSending}
