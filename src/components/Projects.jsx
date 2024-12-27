@@ -10,7 +10,7 @@ const Projects = () => {
           {PROJECTS.map((project) => (
             <div
               key={project.id}
-              className="group relative overflow-hidden rounded-3xl"
+              className="group relative overflow-hidden h-[350px] flex flex-col rounded-3xl"
             >
               <img
                 src={project.image}
@@ -19,7 +19,19 @@ const Projects = () => {
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100">
                 <h3 className="mb-2 text-xl">{project.name}</h3>
-                <p className="mb-12 p-4">{project.description}</p>
+                <p className=" p-4">{project.description}</p>
+                <div className="mb-4">
+                  <div className="flex  items-center justify-center flex-wrap gap-2 mt-2 text-gray-300">
+                    {project.tech.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="bg-gray-800 px-2 py-1 rounded text-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
                 <a
                   href={project.git}
                   target="_blank"

@@ -1,7 +1,8 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-import p1 from "../assets/arjunCircle.jpeg";
+import p1 from "../assets/portfolio.png";
+import p2 from "../assets/arjunCircle.jpeg";
 
 //   import { RiReactjsLine } from "react-icons/ri";
 //   import { TbBrandNextjs } from "react-icons/tb";
@@ -32,9 +33,18 @@ export const PROJECTS = [
     id: 1,
     name: "Personal Portfolio",
     description:
-      "A personal portfolio website built with JavaScript, React + Vite and Tailwind CSS to showcase my skills, projects, and contact information.",
+      "A personal portfolio website to showcase my skills, projects, and contact information.",
     image: p1,
-    git: "https://github.com/user/personal-portfolio",
+    tech: [
+      "JavaScript",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "ThreeJS",
+      "EmailJS",
+      "ReactHotToast",
+    ],
+    git: "https://github.com/arj5/portfolio",
   },
 ];
 
@@ -78,14 +88,29 @@ export const SKILLS = [
 export const SOCIAL = [
   {
     href: "https://github.com/arj5",
-    icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
+    icon: (
+      <FaGithub
+        fontSize={35}
+        className="transition-transform duration-300 hover:scale-150"
+      />
+    ),
   },
   {
     href: "http://www.linkedin.com/in/arjunsharma0510",
-    icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
+    icon: (
+      <FaLinkedin
+        fontSize={35}
+        className="transition-transform duration-300 hover:scale-150"
+      />
+    ),
   },
   {
     href: "mailto:arjunsharma0510@gmail.com",
-    icon: <MdEmail fontSize={25} className="hover:opacity-80" />,
+    icon: (
+      <MdEmail
+        fontSize={35}
+        className="transition-transform duration-300 hover:scale-150"
+      />
+    ),
   },
 ];

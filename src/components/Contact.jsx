@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FiSend } from "react-icons/fi";
 import toast, { Toaster } from "react-hot-toast";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -85,18 +86,20 @@ const Contact = () => {
           },
         }}
       />
-      <div className="  pt-10 lg:w-3/4  " id="contact">
-        <h2 className=" my-2 text-center text-4xl font-semibold tracking-tighter">
-          Connect With Me
-        </h2>
-        <div className="flex justify-center">
+      <div className="  pt-20 lg:w-3/4  " id="contact">
+        <h2 className=" text-center text-3xl lg:text-4xl">Connect With Me</h2>
+        <div className="flex justify-center gap-2 items-center my-10">
           <a
-            className="mb-8 rounded border-2 border-stone-50/30 bg-white text-stone-900 hover:bg-stone-300 px-4 py-2 text-sm font-semibold "
             href="mailto:arjunsharma0510@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            {" "}
-            arjunsharma0510@gmail.com
+            <MdEmail
+              fontSize={25}
+              className="transition-transform duration-300 hover:scale-150"
+            />
           </a>
+          arjunsharma0510@gmail.com
         </div>
         <form onSubmit={handleSubmit}>
           <div className=" mb-4  ">
