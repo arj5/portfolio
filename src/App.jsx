@@ -1,6 +1,7 @@
 import Hero from "../src/components/Hero.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <Hero />
           <Navbar />
           <Projects />
+          <Contact />
         </div>
       </div>
     </>
