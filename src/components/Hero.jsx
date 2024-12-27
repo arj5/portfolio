@@ -8,7 +8,6 @@ import { useEffect } from "react";
 
 const Hero = () => {
   useEffect(() => {
-    // Initialize Typed.js after the component is mounted
     const typed = new Typed(".auto-type", {
       strings: [
         "Software Developer",
@@ -22,7 +21,6 @@ const Hero = () => {
       loop: true,
     });
 
-    // Cleanup the Typed.js instance when the component is unmounted
     return () => {
       typed.destroy();
     };
