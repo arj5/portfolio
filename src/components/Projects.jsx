@@ -17,11 +17,11 @@ const Projects = () => {
                 alt={project.name}
                 className=" h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100">
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100">
                 <h3 className="mb-2 text-xl">{project.name}</h3>
                 <p className=" p-4">{project.description}</p>
                 <div className="mb-4">
-                  <div className="flex  items-center justify-center flex-wrap gap-2 mt-2 text-gray-300">
+                  <div className="flex  items-center justify-center flex-wrap gap-2 mt-2 text-white">
                     {project.tech.map((tech, index) => (
                       <span
                         key={index}

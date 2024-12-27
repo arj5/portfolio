@@ -2,7 +2,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 import p1 from "../assets/portfolio.png";
-import p2 from "../assets/arjunCircle.jpeg";
+import p2 from "../assets/tasks.png";
+import p3 from "../assets/q.png";
+import p4 from "../assets/w.png";
+import p5 from "../assets/music.png";
 
 //   import { RiReactjsLine } from "react-icons/ri";
 //   import { TbBrandNextjs } from "react-icons/tb";
@@ -45,6 +48,48 @@ export const PROJECTS = [
       "ReactHotToast",
     ],
     git: "https://github.com/arj5/portfolio",
+  },
+  {
+    id: 2,
+    name: "myTasks",
+    description:
+      "A full-stack powerful Task Manager with CRUD functionality for tasks, task sorting and filtering and success/fail pop-up messages.",
+    image: p2,
+    tech: ["Python", "Django", "SQL", "MySQL", "Bootstrap CSS", "HTML"],
+    git: "https://github.com/arj5/myTasks",
+  },
+  {
+    id: 3,
+    name: "Quick Sum",
+    description:
+      "A Chrome extension, condenses lengthy content into easily digestible snippets, preserving key insights without overwhelming details, solving time/reading constraints.",
+    image: p3,
+    tech: ["JavaScript", "HTML", "CSS", "RapidAPI", "Chrome"],
+    git: "https://github.com/arj5/quick-sum",
+  },
+  {
+    id: 4,
+    name: "Weather App",
+    description:
+      "Dynamic and responsive weather application offering real-time weather updates, geolocation-based data, unit conversion, a robust location search functionality and more.",
+    image: p4,
+    tech: ["JavaScript", "React", "Tailwind CSS", "OpenWeather API"],
+    git: "https://github.com/arj5/weather-application",
+  },
+  {
+    id: 5,
+    name: "Music Store Player",
+    description:
+      "Terminal based Java music application with store management, playable song lyrics/audiobook text, content download/search/sorting, and playlist creation.",
+    image: p5,
+    tech: [
+      "Java",
+      "Inheritence",
+      "Polymorphism",
+      "Encapsulation",
+      "Abstration",
+    ],
+    git: "https://github.com/arj5/weather-application",
   },
 ];
 
