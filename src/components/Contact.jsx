@@ -85,7 +85,7 @@ const Contact = () => {
           },
         }}
       />
-      <div className=" p-4 lg:w-3/4  " id="contact">
+      <div className="  pt-10 lg:w-3/4  " id="contact">
         <h2 className=" my-2 text-center text-4xl font-semibold tracking-tighter">
           Connect With Me
         </h2>

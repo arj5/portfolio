@@ -26,11 +26,11 @@ const Hero = () => {
             <MdSchool />
             {HERO.degree}
           </p>
-          <p className="flex flex-row pb-5 md:pb-0 items-center  gap-2 pl-2 md:pl-2 text-xl tracking-tighter md:text-xl">
+          <p className="flex flex-row  items-center  gap-2 pl-2 md:pl-2 text-xl tracking-tighter md:text-xl">
             <FaSchoolFlag />
             {HERO.school}
           </p>
-          <div className="flex gap-3 mt-4 ml-2">
+          <div className="flex gap-3 my-3 md:mt-4 ml-2">
             {SOCIAL.map((link, index) => (
               <a
                 key={index}
