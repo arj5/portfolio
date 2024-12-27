@@ -2,12 +2,15 @@ import { HERO, SOCIAL } from "../info";
 import arj from "../assets/arjunCircle.jpeg";
 import { FaLocationDot, FaSchoolFlag } from "react-icons/fa6";
 import { MdSchool } from "react-icons/md";
-import React from "react";
+import signW from "../assets/signW.png";
 
 const Hero = () => {
   return (
     <>
-      <section className="flex md:min-h-screen flex-wrap items-center md:mt-1 mt-14">
+      <section
+        className="flex md:min-h-screen flex-wrap items-center md:mt-1 mt-14"
+        id="home"
+      >
         <div className="w-full md:w-1/2 md:border-l-8 border-b-4 md:border-b-0 border-white md:pl-5 text-center md:text-left">
           <h2 className=" text-7xl px-2 pt-20 md:pt-0 font-bold md:text-5xl lg:text-[7rem]">
             {HERO.first}
@@ -43,14 +46,18 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        <div className="max-w-full md:w-1/2 lg:p-8 ">
-          <div className="flex justify-center">
+        <div className=" max-w-full md:w-1/2 lg:p-8 ">
+          <div className="flex relative justify-center items-center flex-col">
             <img
               src={arj}
               width={450}
               className="imgBorder rounded-full z-30"
               alt="arjun"
             />
+            <div className="md:absolute md:w-full md:z-50 md:top-[320px] md:left-[280px]">
+             
+              <img src={signW} width={160} alt="signW" className="mx-3" />
+            </div>
           </div>
         </div>
       </section>

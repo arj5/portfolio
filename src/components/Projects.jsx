@@ -33,13 +33,13 @@ const Projects = () => {
                   </div>
                 </div>
                 <a
-                  href={project.git}
+                  href={project.view}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300"
                 >
                   <div className="flex items-center">
-                    <span>View on GitHub</span>
+                    <span>View Project</span>
                     <MdArrowOutward />
                   </div>
                 </a>

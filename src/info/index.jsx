@@ -5,7 +5,9 @@ import p1 from "../assets/portfolio.png";
 import p2 from "../assets/tasks.png";
 import p3 from "../assets/q.png";
 import p4 from "../assets/w.png";
-import p5 from "../assets/music.png";
+import p5 from "../assets/rebrand.png";
+import p6 from "../assets/music.png";
+import p7 from "../assets/tic.png";
 
 //   import { RiReactjsLine } from "react-icons/ri";
 //   import { TbBrandNextjs } from "react-icons/tb";
@@ -15,6 +17,7 @@ import p5 from "../assets/music.png";
 //   import { BiLogoPostgresql } from "react-icons/bi";
 
 export const LINKS = [
+  { label: "Home", href: "#home" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
@@ -47,7 +50,7 @@ export const PROJECTS = [
       "EmailJS",
       "ReactHotToast",
     ],
-    git: "https://github.com/arj5/portfolio",
+    view: "https://github.com/arj5/portfolio",
   },
   {
     id: 2,
@@ -56,7 +59,7 @@ export const PROJECTS = [
       "A full-stack powerful Task Manager with CRUD functionality for tasks, task sorting and filtering and success/fail pop-up messages.",
     image: p2,
     tech: ["Python", "Django", "SQL", "MySQL", "Bootstrap CSS", "HTML"],
-    git: "https://github.com/arj5/myTasks",
+    view: "https://github.com/arj5/myTasks",
   },
   {
     id: 3,
@@ -65,7 +68,7 @@ export const PROJECTS = [
       "A Chrome extension, condenses lengthy content into easily digestible snippets, preserving key insights without overwhelming details, solving time/reading constraints.",
     image: p3,
     tech: ["JavaScript", "HTML", "CSS", "RapidAPI", "Chrome"],
-    git: "https://github.com/arj5/quick-sum",
+    view: "https://github.com/arj5/quick-sum",
   },
   {
     id: 4,
@@ -74,14 +77,23 @@ export const PROJECTS = [
       "Dynamic and responsive weather application offering real-time weather updates, geolocation-based data, unit conversion, a robust location search functionality and more.",
     image: p4,
     tech: ["JavaScript", "React", "Tailwind CSS", "OpenWeather API"],
-    git: "https://github.com/arj5/weather-application",
+    view: "https://github.com/arj5/weather-application",
   },
   {
     id: 5,
+    name: "Logo Rebrand",
+    description:
+      "High School logo rebrand prototype using Figma, featuring intuitive navigation, interactive UI components, a cohesive brand package with logo typography, color palettes, and merchandise designs for consistent and professional visual identity.",
+    image: p5,
+    tech: ["Figma", "Protoyping", "UI/UX"],
+    view: "https://www.figma.com/proto/k5Esbfvhyx4kkITFVbUYBp/Arjun---rebrand-presentation?page-id=0%3A1&node-id=40-3&starting-point-node-id=40%3A3&scaling=scale-down&content-scaling=fixed&t=0IJflgCDwQic9Fx8-1",
+  },
+  {
+    id: 6,
     name: "Music Store Player",
     description:
       "Terminal based Java music application with store management, playable song lyrics/audiobook text, content download/search/sorting, and playlist creation.",
-    image: p5,
+    image: p6,
     tech: [
       "Java",
       "Inheritence",
@@ -89,7 +101,15 @@ export const PROJECTS = [
       "Encapsulation",
       "Abstration",
     ],
-    git: "https://github.com/arj5/weather-application",
+    view: "https://github.com/arj5/MusicStorePlayer",
+  },
+  {
+    id: 7,
+    name: "Tic Tac Toe",
+    description: "Simple UI/UX game of Tic-Tac-Toe",
+    image: p7,
+    tech: ["JavaScript", "HTML", "CSS"],
+    view: "https://github.com/arj5/tic-tac-toe",
   },
 ];
 
