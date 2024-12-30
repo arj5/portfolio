@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
@@ -10,7 +10,7 @@ export const cloudProps = {
       justifyContent: "center",
       alignItems: "center",
       width: "100%",
-      paddingTop: 40,
+      paddingTop: 10,
     },
   },
   options: {
@@ -24,17 +24,13 @@ export const cloudProps = {
     clickToFront: 500,
     tooltipDelay: 0,
     outlineColour: "#0000",
-    maxSpeed: 0.04,
-    minSpeed: 0.02,
-    // dragControl: false,
+    maxSpeed: 0.005,
+    minSpeed: 0.001,
+    dragControl: true,
   },
 };
 
-export const renderCustomIcon = (
-  icon,
-  theme,
-  imageArray,
-) => {
+export const renderCustomIcon = (icon, theme, imageArray) => {
   const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
   const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
   const minContrastRatio = theme === "dark" ? 2 : 1.2;
@@ -44,7 +40,7 @@ export const renderCustomIcon = (
     bgHex,
     fallbackHex,
     minContrastRatio,
-    size: 42,
+    size: 10,
     aProps: {
       href: undefined,
       target: undefined,
@@ -58,7 +54,7 @@ export default function IconCloud({
   // Default to an empty array if not provided
   iconSlugs = [],
 
-  imageArray
+  imageArray,
 }) {
   const [data, setData] = useState(null);
   const { theme } = useTheme();
@@ -74,24 +70,31 @@ export default function IconCloud({
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light"));
+      renderCustomIcon(icon, theme || "light")
+    );
   }, [data, theme]);
 
   return (
     // @ts-ignore
-    (<Cloud {...cloudProps}>
+    <Cloud {...cloudProps}>
       <>
         <>{renderedIcons}</>
         {imageArray &&
           imageArray.length > 0 &&
           imageArray.map((image, index) => {
             return (
-              (<a key={index} href="#" onClick={(e) => e.preventDefault()}>
-                <img height="42" width="42" alt="A globe" src={image} />
-              </a>)
+              <a key={index} href="#" onClick={(e) => e.preventDefault()}>
+                <img
+                  // className="bg-white bg-opacity-20 p-3 rounded-full"
+                  height="70"
+                  width="70"
+                  alt="A globe"
+                  src={image}
+                />
+              </a>
             );
           })}
       </>
-    </Cloud>)
+    </Cloud>
   );
 }
