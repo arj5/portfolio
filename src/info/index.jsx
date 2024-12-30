@@ -9,6 +9,8 @@ import p5 from "../assets/rebrand.png";
 import p6 from "../assets/music.png";
 import p7 from "../assets/tic.png";
 
+import python from "../assets/python.png";
+
 //   import { RiReactjsLine } from "react-icons/ri";
 //   import { TbBrandNextjs } from "react-icons/tb";
 //   import { SiMongodb } from "react-icons/si";
@@ -119,37 +121,17 @@ export const PROJECTS = [
 // ];
 
 export const SKILLS = [
-  // {
-  //   icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
-  //   name: "React",
-  //   experience: "2+ years",
-  // },
-  // {
-  //   icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
-  //   name: "Next.js",
-  //   experience: "1+ year",
-  // },
-  // {
-  //   icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
-  //   name: "MongoDB",
-  //   experience: "1.5+ years",
-  // },
-  // {
-  //   icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
-  //   name: "Redis",
-  //   experience: "1+ year",
-  // },
-  // {
-  //   icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
-  //   name: "Node.js",
-  //   experience: "2+ years",
-  // },
-  // {
-  //   icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
-  //   name: "PostgreSQL",
-  //   experience: "1+ year",
-  // },
+  {
+    icon: python,
+    name: "Python",
+    xp: "5+ years",
+  },
 ];
+// {
+//   icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
+//   name: "React",
+//   experience: "2+ years",
+// },
 
 export const SOCIAL = [
   {

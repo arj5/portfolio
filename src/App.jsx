@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ParticlesCanvas from "./components/Particles.jsx";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <div className="relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto">
           <Hero />
           <Navbar />
+          <Skills />
           <Projects />
           <Contact />
           <Footer />
