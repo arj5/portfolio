@@ -36,7 +36,7 @@ const Skills = () => {
   return (
     <section className="pt-20" id="skills">
       <h2 className="mb-24 text-center text-3xl lg:text-4xl">SKILLS</h2>
-      <div className="relative flex size-full max-w-lg items-center bg-black bg-opacity-75 justify-center overflow-hidden rounded-full  p-24 ">
+      <div className="relative flex size-full max-w-lg items-center bg-black bg-opacity-75 justify-center overflow-hidden rounded-full  p-20 border-8 shadow-[0_0_15px_4px_rgba(255,255,255,0.8)] ">
         <IconCloud imageArray={images} />
       </div>
 

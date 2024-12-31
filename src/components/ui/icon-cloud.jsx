@@ -86,8 +86,8 @@ export default function IconCloud({
               <a key={index} href="#" onClick={(e) => e.preventDefault()}>
                 <img
                   // className="bg-white bg-opacity-20 p-3 rounded-full"
-                  height="70"
-                  width="70"
+                  height="60"
+                  width="60"
                   alt="A globe"
                   src={image}
                 />

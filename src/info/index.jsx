@@ -20,8 +20,8 @@ import python from "../assets/python.png";
 
 export const LINKS = [
   { label: "Home", href: "#home" },
-  { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -111,7 +111,7 @@ export const PROJECTS = [
     name: "Tic Tac Toe",
     description: "Simple UI/UX game of Tic-Tac-Toe",
     image: p7,
-    tech: ["JavaScript", "HTML", "CSS", "Vercel"],
+    tech: ["JavaScript", "HTML", "CSS", "Netlify"],
     view: "https://github.com/arj5/tic-tac-toe",
   },
 ];
