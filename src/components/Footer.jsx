@@ -4,10 +4,10 @@ import { SOCIAL } from "../info";
 
 const Footer = () => {
   return (
-    <div className="mb-8 mt-20">
-      <div className="flex items-center justify-center transition-transform duration-300 hover:scale-110">
+    <div className="">
+      <div className="flex my-20 items-center justify-center transition-transform duration-300 hover:scale-110">
         <a href="https://smpl-tictactoe.netlify.app/" target="_blank">
-          <img src={signW} width={200} alt="signW" className="my-20" />
+          <img src={signW} width={200} alt="signW" />
         </a>
       </div>
       <div className="flex items-center justify-center gap-8">
