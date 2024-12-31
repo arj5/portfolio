@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <>
       <section
-        className="flex md:min-h-screen flex-wrap items-center md:mt-1 mt-14"
+        className="flex md:min-h-screen flex-wrap items-center md:mt-1 "
         id="home"
       >
         <div className="w-full md:w-1/2 md:border-l-8 border-b-4 md:border-b-0 border-white md:pl-5 text-center md:text-left">
