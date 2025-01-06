@@ -20,7 +20,7 @@ import python from "../assets/python.png";
 
 export const LINKS = [
   { label: "Home", href: "#home" },
-  { label: "Skills", href: "#skills" },
+  // { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
