@@ -32,17 +32,34 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                <a
-                  href={project.view}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300"
-                >
-                  <div className="flex items-center">
-                    <span>View Project</span>
-                    <MdArrowOutward />
-                  </div>
-                </a>
+                <div className="flex flex-row gap-2">
+                  {project.view && (
+                    <a
+                      href={project.view}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300"
+                    >
+                      <div className="flex items-center">
+                        <span>View</span>
+                        <MdArrowOutward />
+                      </div>
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full bg-orange-500 px-4 py-2 text-black hover:bg-orange-600"
+                    >
+                      <div className="flex items-center">
+                        <span>GitHub</span>
+                        <MdArrowOutward />
+                      </div>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}

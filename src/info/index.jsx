@@ -53,7 +53,7 @@ export const PROJECTS = [
       "ReactHotToast",
       "Vercel",
     ],
-    view: "https://github.com/arj5/portfolio",
+    github: "https://github.com/arj5/portfolio",
   },
   {
     id: 2,
@@ -62,7 +62,7 @@ export const PROJECTS = [
       "A full-stack powerful Task Manager with CRUD functionality for tasks, task sorting and filtering and success/fail pop-up messages.",
     image: p2,
     tech: ["Python", "Django", "SQL", "MySQL", "Bootstrap CSS", "HTML"],
-    view: "https://github.com/arj5/myTasks",
+    github: "https://github.com/arj5/myTasks",
   },
   {
     id: 3,
@@ -71,7 +71,7 @@ export const PROJECTS = [
       "A Chrome extension, condenses lengthy content into easily digestible snippets, preserving key insights without overwhelming details, solving time/reading constraints.",
     image: p3,
     tech: ["JavaScript", "HTML", "CSS", "RapidAPI", "Chrome"],
-    view: "https://github.com/arj5/quick-sum",
+    github: "https://github.com/arj5/quick-sum",
   },
   {
     id: 4,
@@ -80,7 +80,8 @@ export const PROJECTS = [
       "Dynamic and responsive weather application offering real-time weather updates, geolocation-based data, unit conversion, a robust location search functionality and more.",
     image: p4,
     tech: ["JavaScript", "React", "Tailwind CSS", "OpenWeather API", "Netlify"],
-    view: "https://github.com/arj5/weather-application",
+    github: "https://github.com/arj5/weather-application",
+    view: "https://smplweather.netlify.app/",
   },
   {
     id: 5,
@@ -104,7 +105,7 @@ export const PROJECTS = [
       "Encapsulation",
       "Abstration",
     ],
-    view: "https://github.com/arj5/MusicStorePlayer",
+    github: "https://github.com/arj5/MusicStorePlayer",
   },
   {
     id: 7,
@@ -112,7 +113,8 @@ export const PROJECTS = [
     description: "Simple UI/UX game of Tic-Tac-Toe",
     image: p7,
     tech: ["JavaScript", "HTML", "CSS", "Netlify"],
-    view: "https://github.com/arj5/tic-tac-toe",
+    github: "https://github.com/arj5/tic-tac-toe",
+    view: "https://smpl-tictactoe.netlify.app/",
   },
 ];
 
