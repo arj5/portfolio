@@ -146,7 +146,7 @@ export const SOCIAL = [
     ),
   },
   {
-    href: "http://www.linkedin.com/in/arjunsharma0510",
+    href: "http://www.linkedin.com/in/arj-shar",
     icon: (
       <FaLinkedin
         fontSize={35}
