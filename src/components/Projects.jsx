@@ -46,6 +46,7 @@ const Projects = () => {
                       </div>
                     </a>
                   )}
+                  
                   {project.github && (
                     <a
                       href={project.github}
@@ -55,6 +56,19 @@ const Projects = () => {
                     >
                       <div className="flex items-center">
                         <span>GitHub</span>
+                        <MdArrowOutward />
+                      </div>
+                    </a>
+                  )}
+                  {project.docs && (
+                    <a
+                      href={project.docs}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full bg-blue-500 px-4 py-2 text-white hover:bg-gray-300"
+                    >
+                      <div className="flex items-center">
+                        <span>Docs</span>
                         <MdArrowOutward />
                       </div>
                     </a>
