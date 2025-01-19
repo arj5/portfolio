@@ -57,7 +57,7 @@ export const PROJECTS = [
       "JMeter",
       "BCrypt",
     ],
-    github: "https://github.com/arj5/portfolio",
+    github: "https://github.com/tahayarkhan/Skill-Match",
     docs: "https://publuu.com/flip-book/773515/1714634",
   },
   {
