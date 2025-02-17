@@ -58,7 +58,7 @@ export const PROJECTS = [
       "BCrypt",
     ],
     github: "https://github.com/tahayarkhan/Skill-Match",
-    docs: "https://publuu.com/flip-book/773515/1714634",
+    docs: "https://publuu.com/flip-book/800255/1765983",
   },
   {
     id: 7,
