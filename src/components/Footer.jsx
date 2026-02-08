@@ -23,7 +23,7 @@ const Footer = () => {
         ))}
       </div>
       <p className=" mt-8 text-center text-sm tracking-wide text-gray-400">
-        &copy; 2025 Arjun Sharma. All Rights Reserved.
+        &copy; 2026 Arjun Sharma. All Rights Reserved.
       </p>
     </div>
   );
