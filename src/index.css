@@ -103,3 +103,13 @@ body{
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+
+  .timeline-glow {
+    box-shadow:
+      0 0 40px color-mix(in srgb, #10112a 35%, transparent),
+      0 0 80px color-mix(in srgb, #10112a 25%, transparent);
+  }
+  
+}

@@ -22,6 +22,7 @@ import python from "../assets/python.png";
 export const LINKS = [
   { label: "Home", href: "#home" },
   // { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
@@ -31,11 +32,60 @@ export const HERO = {
   last: "SHARMA",
   greet: "Hello there!",
   location: "Toronto",
-  school: "3rd Year @ Toronto Metropolitan University",
+  school: "4th Year @ Toronto Metropolitan University",
   degree: "Computer Science Co-op Program (BSc)",
 };
 
 // Toronto Metropolitan University (formerly Ryerson), Toronto, ON Sep 2022 - April 2027 (Exp) Bachelor of Science (BSc): Computer Science Co-op Program.
+
+export const EXP = [
+  {
+    role: "Software Developer",
+    company: "Enviornment Climate Change Canada (ECCC)",
+    period: "May 2025 - Present",
+    description:
+      "Developed and created digital permitting and regulatory services supporting 150,000+ annual wildlife-related transactions. Contributed throughout the full software development lifecycle across multiple Agile sprints, collaborating with cross-functional teams to deliver government services.",
+    tech: ["Drupal", "PHP", "C#", "Azure DevOps", "ADLS", "DataVerse"],
+    current: true,
+  },
+  {
+    role: "Tech Director",
+    company: "Google Developer Groups (GDG)",
+    period: "October 2023 - August 2025",
+    description:
+      "Founding member and technical lead of Canada's largest GDG chapter, scaling from 5 to 40 organizers and engaging 6,000+ students. Led hackathons and technical events with MLH and Google Developer Experts, delivering hands-on workshops and panels.",
+    tech: ["Google Tech", "Communication", "Leadership", "Event Planning"],
+    current: false,
+  },
+  {
+    role: "Software Developer",
+    company: "Aisha Comfortable Co-living",
+    period: "June 2024 - August 2024",
+    description:
+      "Worked across multiple production websites, building responsive features, refactoring existing code, and improving performance. Collaborated within a fast-paced startup team to deliver new functionality and ensure designs were accurately implemented across the platform.",
+    tech: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "Django",
+      "Python",
+      "Tailwind",
+      "Material UI",
+      "Figma",
+      "Jira",
+    ],
+    current: false,
+  },
+  {
+    role: "Project Designer",
+    company: "Stratagem Arts Program",
+    period: "May 2025 - Present",
+    description:
+      "Developed and pitched strategic business concepts to peers and industry professionals. Led research, ideation, and presentation development while collaborating in small, rotating teams to execute projects in a fast-paced, remote environment.",
+    tech: ["Teamwork", "Design Thinking", "Presentation Skills", "Research"],
+    current: false,
+  },
+];
 
 export const PROJECTS = [
   {

@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ParticlesCanvas from "./components/Particles.jsx";
 import Skills from "./components/Skills";
+import Work from "./components/Work.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Hero />
           <Navbar />
           {/* <Skills /> */}
+          <Work />
           <Projects />
           <Contact />
           <Footer />
