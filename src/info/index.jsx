@@ -42,7 +42,7 @@ export const EXP = [
   {
     role: "Software Developer",
     company: "Enviornment Climate Change Canada (ECCC)",
-    period: "May 2025 - Present",
+    period: "May 2025 - August 2026",
     description:
       "Developed and created digital permitting and regulatory services supporting 150,000+ annual wildlife-related transactions. Contributed throughout the full software development lifecycle across multiple Agile sprints, collaborating with cross-functional teams to deliver government services.",
     tech: ["Drupal", "PHP", "C#", "Azure DevOps", "ADLS", "DataVerse"],
@@ -79,7 +79,7 @@ export const EXP = [
   {
     role: "Project Designer",
     company: "Stratagem Arts Program",
-    period: "May 2025 - Present",
+    period: "July 2021 - August 2021",
     description:
       "Developed and pitched strategic business concepts to peers and industry professionals. Led research, ideation, and presentation development while collaborating in small, rotating teams to execute projects in a fast-paced, remote environment.",
     tech: ["Teamwork", "Design Thinking", "Presentation Skills", "Research"],
